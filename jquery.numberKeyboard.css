@@ -1,0 +1,70 @@
+.number-keyboard {
+    background: #f0f0f2;
+    width: 100%
+}
+
+.number-keyboard .key-area {
+    width: 100%;
+    height: 100%;
+    font-size: 0
+}
+
+.number-keyboard .key-area .key {
+    font-size: 32px;
+    color: #000;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    width: 33.33%;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative
+}
+
+.number-keyboard .key-area .key:before {
+    border-right: 2px solid #8c8c8c;
+    content: '';
+    border-bottom: 2px solid #8c8c8c;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    z-index: 1
+}
+
+.number-keyboard .key-area .key:nth-of-type(3n):before {
+    border-right: none
+}
+
+.number-keyboard .key-area .key:nth-of-type(10):before,.number-keyboard .key-area .key:nth-of-type(11):before {
+    border-bottom: none
+}
+
+.number-keyboard .key-area .key:active {
+    background: #d2d5db
+}
+
+.number-keyboard .key-area .key.backspace {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAkCAYAAADPRbkKAAAAAXNSR0IArs4c6QAAA4dJREFUWAnNWFuITVEYPoYmJHfCy2hIkpiQBynhhZSkKIWH8eRRkjwdD0re3B4RDy7xMBEPHvFgSnILSZqaGuOuGbfEDN93Op/+WWfts9faZ59j/vpn/ftf/+X79tpr7X2mUKhNJiB9H7QT2g/9U2ftRf3r0DXQmmUzKryH1hu0r/4g+h6EZpZdyGQRX/FG+dh/dRYGm5D024B/BbsdOgtab2GPa1DdpBuxDVch4YcpcA8290EjhSRE4HVM4zYE95nkF7CnxRTIKbbJYBgIrTkHgW9MYg/sltDknONGGRy/QmrPQBCfcy3bJ9gLQxLrFNNssPxM68Hn+6FJ+A57RVpSnedHGzzcj4nCwFtQ3Xku14bE6MZNjDWYviW1HYmJDhPIM3dnUnCCfyX8XL1z0PEJMa57IxzMOe1OmOtxsHVTvxj/EPOUCWLw3iGzYRdXTI27sNNIbEEMV1ngFsP2CesohqdihRyGRwEcj1REhDl2OHWqkXDB89DgaeOTiXAK32c3YI+ZZNAZNyDyuujU85FwwXcjp7VKn8mm5kcbtx0XfNbF7ips7oVapRqJWPDEMhUqjPyYLMk6/LXP321c8xTKS3wk2lHc9ky788IyHYYIvKWTz9Q743wEm+d/3uKSEAiOoeCJiS9W5fbSwRNGji7YM+mskxRRV700xoAnLPsx19MExwJ6y3IMY4mVHDmPz1CP+8wK+32wjhSbmCWDvLCfpNwLeWxcNbAjN+wFqAXA+eXQm9C09wRjKTa/dDOWwjkA1ZKeh503Cd9pc9T0ZG/fEQt3hcyGR1i7NHvIODmZJwkf+NZy46LTN4QEc0WAL7x/chKWJjhyuWtdiWrg1TiWxFyD86WKaMyTxFoUDT3nXRJ3BMgzzoNPN5q/CivkBDwK4Jh1JS6bOt2w9djA9IpLos0bVSjMh1/4nifEFPIgsRXFv0IfQNPAC8f+cg7/WZD0McdjXwSeKtE3uiQuIih2T4zxFU7xpeXw56wIPEmpVbESWUik9YidX2QI8LMnVY4jQow5/m8S3BvCw8czSIYTiSVALAL3g9CXg4YLiWWGADd7lLgkLiG7OapC7cF8OWoFOrKU4xerCnB8DN0GnQQdEaEIjRLW5t3n21f9D0RVMMHuh5gKNnLkjzD+Osssu5HZD20kaPVi3/WZkZvEKbC5jJ3QPii/z0NVYEJH1uW3z1loC7QkfwEEcfSE1SAmEAAAAABJRU5ErkJggg==);background-position: center;
+    background-size: 24px 18px;
+    background-repeat: no-repeat
+}
+
+.number-keyboard .key-area .key.backspace,.number-keyboard .key-area .key.dot {
+    background-color: #d2d5db
+}
+
+.number-keyboard .key-area .key.backspace:active,.number-keyboard .key-area .key.dot:active {
+    background: #fff
+}
